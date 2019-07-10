@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang= "ko">
+    <head>
+        <meta charset= "utf-8">
+        <title>첫번째 HTML</title>
+        <style>
+            /* 태그 선택자 */
+            h1 {
+                color : red;
+                text-align:center;
+            
+            }
+            p {
+                color : skyblue;
+                text-align:right
+            }
+            /* 클래스 선택자 */
+            .purple {
+                color: purple;
+            }
+            /* 아이디 선택자 */
+            #pink {
+                color : pink;
+            }
+            h2 {
+                color : black;
+            }
+            /* 우선순위
+            id > class > 태그
+            id는 문서에서 하나만 존재할 수 있다.
+            calss는 문서에서 여러개 존재할 수 있다.
+            태그는 그냥 기본이다.
+             */
+
+        </style>
+    </head>
+    <body>
+        <h1>Happy, hacking!</h1>
+        <h2 id ="pink" class = "red">안녕하세요.</h2>
+        <h6>가장 작은 제목(heading)입니다.</h6>
+        <p>내용내용. <br>   문단의 내용을 작성합니다.</p>
+        <p class = "purple">나는 보라색이고 싶어요.</p>
+        <!-- a 태그는 href 속성으로 해당하는 링크를 설정한다.-->
+        <a href="https://google.com">구글로 가자! </a>
+        <br>
+        <br>
+
+        <!--img 태그는 닫는 태그가 없다.
+            src 속성값은 이미지의 경로이다.
+        -->
+        <img width="200" height="150" src = "http://imgmovie.naver.com/mdi/mi/0941/94187_P01_154130.jpg">
+        <img width="200" height="150" src = "http://imgmovie.naver.com/mdi/mi/0941/94187_P01_154130.jpg">
+        <br>
+        <br>
+        <br>
+        <iframe width="400" height="310" src="https://www.youtube.com/embed/B_3a7XAH-zU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </body>
+</html>
