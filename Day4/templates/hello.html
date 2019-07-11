@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+</head>
+<body>
+    <!-- jinja 2 : 템플릿 엔진  -->
+    <!-- {# {% %} 로직 코드 #}  -->
+    <!-- {# {{ }} 출력 코드 #}  -->
+
+    {% if name == '용흠' %}
+        <h1> {{name}}, 안녕하십니까. 반장님</h1>
+    {% elif name == '태우' %}
+        <h1> 오셨습니까 {{name}}행님 </h1>
+    {% else %}
+        <h2> {{name}}아 안녕~~</h2>
+    {% endif %}
+</body>
+</html>
