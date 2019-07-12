@@ -27,9 +27,9 @@ for i in range(1,7):
 a = int(input('몇 번이나 뽑을까요? : '))
 for i in range(a):
     my_lotto = sorted(random.sample(range(1,46),6))
-    #print(my_lotto)
-
+    print(my_lotto)
     n=0
+
     for i in my_lotto:
         if i in lotto:
             n += 1

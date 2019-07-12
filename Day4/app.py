@@ -50,5 +50,16 @@ def answer():
     job = request.args.get('job')
     return render_template('answer.html', pick=pick, job=job, name=name)
 
+@app.route('/lotto')
+def lotto():
+    return render_template('lotto.html')
+
+@app.route('/lotto_result')
+def lotto_result():
+    name = request.args.get('name')
+    num = request.args.get('num')
+    random.seed(num)
+    numbers = random.sample(range(1,46),6)
+    return render_template('lotto_result.html', num=num , name=name, numbers = numbers)
 if __name__ == '__main__':
     app.run(debug=True)
